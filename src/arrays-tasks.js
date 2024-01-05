@@ -275,12 +275,7 @@ function distinct(arr) {
  *    createNDimensionalArray(1, 1) => [0]
  */
 function createNDimensionalArray(/* n, size */) {
-  // const matrix = [];
-  // let loop = n;
-  // while(loop > 0) {
-  //   matrix[]
-  //   loop -= 1;
-  // }
+  // return Array(n + 1).fill(Array(size).fill(0));
   throw new Error('Not implemented');
 }
 
@@ -361,8 +356,8 @@ function createChunks(/* arr, chunkSize */) {
  *    generateOdds(2) => [ 1, 3 ]
  *    generateOdds(5) => [ 1, 3, 5, 7, 9 ]
  */
-function generateOdds(/* len */) {
-  throw new Error('Not implemented');
+function generateOdds(len) {
+  return Array.from({ length: len }, (value, index) => 1 + index * 2);
 }
 
 /**
