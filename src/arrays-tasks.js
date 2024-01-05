@@ -275,6 +275,12 @@ function distinct(arr) {
  *    createNDimensionalArray(1, 1) => [0]
  */
 function createNDimensionalArray(/* n, size */) {
+  // const matrix = [];
+  // let loop = n;
+  // while(loop > 0) {
+  //   matrix[]
+  //   loop -= 1;
+  // }
   throw new Error('Not implemented');
 }
 
@@ -289,8 +295,8 @@ function createNDimensionalArray(/* n, size */) {
  *    flattenArray(['a', ['b', ['c', 'd'], 'e'], 'f']) => ['a', 'b', 'c', 'd', 'e', 'f']
  *    flattenArray([1, 2, 3, 4]) => [1, 2, 3, 4]
  */
-function flattenArray(/* nestedArray */) {
-  throw new Error('Not implemented');
+function flattenArray(nestedArray) {
+  return nestedArray.flat(3);
 }
 
 /**
